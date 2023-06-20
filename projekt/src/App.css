@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@700&family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #f1f1f1;
+    font-family: 'Poppins', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3 {
+    line-height: 120%;
+}
+
+.container {
+    width: 75vw;
+    margin: 0 auto;
+}
+
+body {
+    border-left: #1f1f1f 25px solid;
+    border-right: #1f1f1f 25px solid;
+    background-image: url(Slike/background-img.jpg);
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border: 0;
+    background-color: #1f1f1f;
+}
+
+button:hover{
+    background-color: #4a4a4a;
+} 
+
+/* navbar  */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #1f1f1f;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.nav-links a {
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* pocetna  */
+
+.pocetna {
+    width: 100%;
+    margin-top: 35vh;
+    height: 60vh;
+}
+
+.pocetna>h3 {
+    font-family: 'Lora', serif;
+    text-transform: capitalize;
+}
+
+.pocetna>h1 {
+    font-size: 90px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+
+.pocetna>p {
+    font-family: 'Poppins', serif;
+    font-size: 20px;
+    padding: 30px 0;
+    line-height: 120%;
+}
+
+/* o nama  */
+
+.o-nama {
+  margin: 100px 0;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    background-color: #1f1f1f;
+    padding: 30px;
+    gap: 20px;
+    box-shadow: 14px 10px 15px -1px rgba(0, 0, 0, 0.37);
+    flex-wrap: wrap;
+}
+
+.o-nama>.txt {
+    width: 50%;
+}
+
+.o-nama>.txt>h3 {
+    font-family: 'Lora', serif;
+    text-transform: capitalize;
+}
+
+.o-nama>.txt>h1 {
+    font-size: 50px;
+    font-family: 'Montserrat', serif;
+    text-transform: capitalize;
+}
+
+.o-nama>.txt>p {
+    font-family: 'Poppins', serif;
+    font-size: 18px;
+    padding: 15px 0;
+    line-height: 120%;
+}
+
+.o-nama>.txt>button {
+    background-color: #f1f1f1;
+    color: #1f1f1f;
+}
+
+.o-nama>.img {
+    width: 40%;
+}
+
+.o-nama>.img>img {
+    width: 90%;
+}
+
+/* kontakt  */
+
+.kontakt {
+    margin-top: 200px;
+    min-height: 80vh;
+}
+
+iframe {
+    width: 45%;
+    height: 60vh;
+}
+
+.kontakt>h1 {
+    font-family: 'Montserrat', serif;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.kontakt-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* elementi forme  */
+
+input,
+textarea {
+    padding: 10px 20px;
+    margin: 10px 0;
+    width: 30vw;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+
+.forma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    width: 50%;
+}
+
+form>h2 {
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+/* footer  */
+
+.footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1f1f1f;
+    padding: 20px;
+}
+
+.footer>p {
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.donji-dio {
+    border-top: #f1f1f1 solid 1px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.donji-dio>p {
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+}
+
+
+/* back to top  */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.mreze>i {
+    font-size: 30px;
+    padding: 10px;
+}
+
+
+/* recenzije  */
+
+
+
+.prva {
+  grid-area: prva;
+}
+
+.druga {
+  grid-area: druga;
+}
+
+.treca {
+  grid-area: treca;
+}
+
+.recenzije {
+  margin: 0 40px;
+  display: grid;
+  grid-template-areas: "prva druga treca";
+  gap: 20px;
+}
+
+.prva,
+.druga,
+.treca {
+  padding: 20px;
+  background-color: #1f1f1f;
+  margin: 60px 0;
+}
+
+i {
+  margin: 10px 0;
+}
+
+.img-name > h3 {
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.misljenje > p {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 15px;
+}
